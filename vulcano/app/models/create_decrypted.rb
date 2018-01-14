@@ -1,0 +1,2 @@
+class CreateDecrypted < ApplicationRecord
+end

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  decrypted: MyString
+  id_key: 1
+
+two:
+  decrypted: MyString
+  id_key: 1

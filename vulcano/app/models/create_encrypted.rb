@@ -1,0 +1,2 @@
+class CreateEncrypted < ApplicationRecord
+end

@@ -1,13 +1,7 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-	post "/rsas" => "keys#create"
-
-	get "/rsas/:id" => "keys#show"
-
-	post "/rsas/:id/encrypt_messages/" => "encrypt_messages#create"
-
-	get "/rsas/:id/encrypt_messages/:id" => "encrypt_messages#show"
-
-	post "/rsas/:id/decrypt_messages/" => "decrypt_messages#create"
+	resources 'rsas'
+	post '/rsas/:id/encrypt_messages/', to: 'encrypt_messages#create'
+	get '/rsas/:id_message/encrypt_messages/:id', to: 'encrypt_messages#show'
+	post '/rsas/:id/decrypt_messages/', to: 'decrypt_messages#create'
 end
